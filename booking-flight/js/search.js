@@ -53,7 +53,7 @@ function renderSearchResults(data, htmlContainer) {
               </div>
 
               <div class="search_item_price text-end">
-                  <p class="new-price mt-2 mb-4 ">${formatCurrency(result.price * seats, "vi-VN")}</p>
+                  <p class="new-price mt-2 mb-4 ">${formatCurrency(result.price , "vi-VN")}</p>
               </div>
 
               <div class="text-end row">
