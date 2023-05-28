@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flight Booking</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>You Booking</h1>
+        <p>Fill in your details and review your booking</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col ">
+        <div class="card">
+          <div class="card-body">
+            <h2>Book faster and easier with Passenger Quick Pick</h2>
+            <div class="icon-text"><i class="fas fa-check-circle" style="font-size: 13px; color: #4099e1;"></i><span
+                id="login-link" style="font-size: 15px; color: #4099e1;">
+                Login or Register</span>
+            </div><br />
+            <div id="login-popup" class="popup">
+              <h3>Login</h3>
+              <!-- Form đăng nhập -->
+            </div>
+            <p>Get access to My booking, e-ticket, and easy flight refund or rescheduling so you can manage your booking
+              without worry</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col ">
+          <h2>Flight Details</h2>
+          <div class="card">
+            <div class="card-body flight-details">
+              <div class="icon-text"><i class="fas fa-plane" style="font-size: 13px; color: #4099e1;"></i><span
+                  id="flight-info"> Ho Chi Minh -> Da Nang</span>
+                <p id="flight-departure">Departure - Fri, 26 May 2023</p>
+                <p id="flight-airline">Vietnam Airlines</p>
+                <p id="flight-time"> 21:10 (SGN) ---1h20m (direct)---> 22:30 (DAD)</p>
+                <div class="icon-text"><i class="fas fa-check-circle" id="flight-refundable"
+                    style="font-size: 13px; color: #4099e1;"></i><span style="font-size: 15px; color: #4099e1;">
+                    Refundable</span>
+                </div>
+                <div class="icon-text"><i class="fas fa-check-circle" id="flight-refundable"
+                    style="font-size: 13px; color: #4099e1;"></i><span style="font-size: 15px; color: #4099e1;">
+                    Reschedule available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact section starts  -->
+      <section class="contact" id="contact">
+
+        <h1 class="heading">
+          <span>c</span>
+          <span>o</span>
+          <span>n</span>
+          <span>t</span>
+          <span>a</span>
+          <span>c</span>
+          <span>t</span>
+          <span>D</span>
+          <span>e</span>
+          <span>t</span>
+          <span>a</span>
+          <span>i</span>
+          <span>l</span>
+          <span>s</span>
+        </h1>
+
+        <div class="row">
+          <form action="">
+            <div class="inputBox">
+              <input type="text" placeholder="Last Name" id="fname">
+
+              <input type="text" placeholder="Middle & First Name" id="lname">
+            </div>
+            <div class="inputBox">
+              <input type="text" placeholder="Mobile Number" id="phoneNumber">
+              <input type="email" placeholder="Email" id="email">
+            </div>
+            <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+            <div class="btn-authen">
+              <button id="sendBookingInfo" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#verifyModal">
+                Continue
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="verifyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <form action="">
+                  <h2>Enter your code</h2>
+                  <h2>Enter your code</h2>
+                  <div class="inputBox1 px-2">
+                    <input type="text" id="codeInp">
+                  </div>
+                  <h2>Enter your code</h2>
+                </form>
+
+              </div>
+            </div>
+            <div class="modal-footer btn-authen">
+              <button type="submit" class="btn btn-second" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary" id="verify-code">Verify</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="./js/contact.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+</body>
+
+</html>

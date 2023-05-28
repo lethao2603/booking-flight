@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Trang chủ</title>
+  </head>
+</head>
+
+<body id="root">
+  <!-- ---------------------- Phần HEAER của trang web ------------------------------ -->
+  <header class="container-fluid">
+    <div class="header__container">
+      <div class="header__top row">
+        <div class="col-3 image">
+          
+          <!-- <a href="/"><img src="./images/logo1.webp " width = 290px alt="Logo"></a> -->
+          <img src="./images/logo.png" alt="" >
+          <a href="/"><h1 class="header__logo">Booking AirLines </h1></a>
+        </div>
+        <div class="col-9">
+          <div class="header__nav">
+            <nav>
+              <ul class="d-flex h-100">
+                <li><a href="coming-soon.html">Hotels</a></li>
+                <li><a href="coming-soon.html">Flights</a></li>
+                <li><a href="coming-soon.html">Flight + Hotel</a></li>
+                <li><a href="coming-soon.html">Locations</a></li>
+                <li><a href="coming-soon.html">Hot deals</a></li>
+                <li><a href="coming-soon.html">Pages</a></li>
+                <li><a href="coming-soon.html">Contact</a></li>
+                <li><a href="coming-soon.html">Blog</a></li>
+                <li><a href="coming-soon.html">Purchase</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ---------------------- Kết thúc phần HEAER của trang web ------------------------------ -->
+
+  <!-- ---------------------- Thân trang web ------------------------------ -->
+
+  <main>
+    <!-- ---------------------- Banner của web ------------------------------ -->
+    <section class="banner">
+      <img src="./images/banner.jpg" alt="banner" />
+    </section>
+
+    <!-- ---------------------- Form booking của web ------------------------------ -->
+    <div class="main__booking">
+      <div class="container-lg">
+        <h2>Book your travel</h2>
+        <div class="booking__body">
+          <form autocomplete="off" action="" class="d-flex align-items-center justify-content-between">
+            <div class="booking__section">
+              <i class="bi bi-geo-alt-fill"></i>
+              <input type="text" name="booking-place" id="selectFrom" placeholder="From" />
+
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start" aria-labelledby="selectFrom"
+                id="from-dropdown-list">
+              </ul>
+
+            </div>
+
+            <div class="booking__section">
+              <i class="bi bi-geo-alt-fill"></i>
+              <input type="text" name="booking-place" id="selectTo" placeholder="To" />
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start" aria-labelledby="selectTo"
+                id="to-dropdown-list"></ul>
+            </div>
+            <div class="booking__section">
+              <i class="bi bi-calendar3"></i>
+              <input type="text" name="check-out" class="date-picker" placeholder="Depature Date" id="departure-time" />
+            </div>
+            <div class="booking__section">
+              <i class="bi bi-people"></i>
+              <input type="text" name="booking-place" id="booking-place1" placeholder="Number of passengers" />
+            </div>
+
+            <div class="booking__section">
+              <button class="btn-main w-100" id="btn-search">Search Flights</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ---------------------- Slider  chuyến bay theo địa điểm ------------------------------ -->
+    <section class="homePlace">
+      <div class="container-lg">
+        <h2>Top destinations around in VietNam</h2>
+        <div class="swiper mySwiper homePlace_list">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="homePlace_item position-relative text-center">
+                <div class="homePlace_img">
+                  <img src="./images/danang.jpg" alt="" />
+                </div>
+                <h5 class="w-100 mt-3">Đà Nẵng</h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="homePlace_item position-relative text-center">
+                <div class="homePlace_img">
+                  <img src="./images/da-lat.jpg" alt="" />
+                </div>
+                <h5 class="w-100 mt-3">Đà Lạt</h5>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="homePlace_item position-relative text-center">
+                <div class="homePlace_img">
+                  <img src="./images/nha-trang.jpg" alt="" />
+                </div>
+                <h5 class="w-100 mt-3">Nha Trang</h5>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="homePlace_item position-relative text-center">
+                <div class="homePlace_img">
+                  <img src="./images/sa-pa.jpg" alt="" />
+                </div>
+                <h5 class="w-100 mt-3">Sa Pa</h5>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="homePlace_item position-relative text-center">
+                <div class="homePlace_img">
+                  <img src="./images/phu-quoc.jpg" alt="" />
+                </div>
+                <h5 class="w-100 mt-3">Phú Quốc</h5>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="homePlace_item position-relative text-center">
+                <div class="homePlace_img">
+                  <img src="./images/hochiminh.jpg" alt="" />
+                </div>
+                <h5 class="w-100 mt-3">Hồ Chí Minh</h5>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="homePlace_item position-relative text-center">
+                <div class="homePlace_img">
+                  <img src="./images/ha-long.jpg" alt="" />
+                </div>
+                <h5 class="w-100 mt-3">Hạ Long</h5>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="homePlace_item position-relative text-center">
+                <div class="homePlace_img">
+                  <img src="./images/hanoi.jpg" alt="" />
+                </div>
+                <h5 class="w-100 mt-3">Hà Nội</h5>
+              </div>
+            </div>
+          </div>
+          <!-- nút next , previous -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------- Mục hiển thị địa điểm Hot ------------------------------ -->
+    <section class="hot-hotel">
+      <div class="container-lg">
+        <h2>Explore our latest offers</h2>
+        <p class="mt-3">Most searched & booked flights suggested by VietNam AirLines</p>
+        <div class="row mt-4 g-5">
+          <div class="col-3">
+            <div class="card-medium">
+              <div class="card-md-img">
+                <img src="./images/phu-quoc1.jpg" alt="" />
+              </div>
+              <div class="card-md-content">
+                <h5 class="mt-3">Beaches in Phu Quoc Island</h5>
+                <div class="card-md-rating d-flex justify-content-between mt-2 ">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                </div>
+                <div class="mt-3"><i class="bi bi-map"></i> Phu Quoc</div>
+                <div class="details ">
+                  <a href="#" title="Explore our deals" class="gradient-button">Explore our deals</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card-medium">
+              <div class="card-md-img">
+                <img src="./images/hotel/da-nang/crowne_plaza.jpg" alt="" />
+              </div>
+              <div class="card-md-content">
+                <h5 class="mt-3">Crowne Plaza Đà Nẵng</h5>
+                <div class="card-md-rating d-flex justify-content-between mt-2">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+
+                </div>
+                <div class="mt-3">
+                  <i class="bi bi-map"></i> Ngu Hanh Son, Da Nang
+                </div>
+                <div class="details ">
+                  <a href="#" title="Explore our deals" class="gradient-button">Explore our deals</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card-medium">
+              <div class="card-md-img">
+                <img src="./images/hotel/da-nang/sala_beach.jpg" alt="" />
+              </div>
+              <div class="card-md-content">
+                <h5 class="mt-3">Sala Da Nang Beach</h5>
+                <div class="card-md-rating d-flex justify-content-between mt-2">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+
+                </div>
+                <div class="mt-3"><i class="bi bi-map"></i> Son Tra, Da Nang</div>
+                <div class="details ">
+                  <a href="#" title="Explore our deals" class="gradient-button">Explore our deals</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card-medium">
+              <div class="card-md-img">
+                <img src="./images/hotel/da-nang/mikazuki_resort.jpg" alt="" />
+              </div>
+              <div class="card-md-content">
+                <h5 class="mt-3">Mikazuki Japanese Resorts & Spa</h5>
+                <div class="card-md-rating d-flex justify-content-between mt-2">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+
+                </div>
+                <div class="mt-3"><i class="bi bi-map"></i> Son Tra, Da Nang</div>
+                <div class="details ">
+                  <a href="#" title="Explore our deals" class="gradient-button">Explore our deals</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ---------------------- Kết thúc phần Thân trang web ------------------------------ -->
+
+  <!-- ---------------------- Footer của trang web ------------------------------ -->
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <h1>VietNam AirLines </h1>
+          <div class="mt-4">
+            <p>Inspiration for travels</p>
+            <p>Travel secrets, interesting stories are waiting for you</p>
+          </div>
+        </div>
+
+        <div class="col-2 footer_col">
+          <h3>Customer support</h3>
+          <ul class="mt-4">
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">How do I make a booking airline?</a></li>
+            <li><a href="#">Payment options</a></li>
+            <li><a href="#">Booking tips</a></li>
+          </ul>
+        </div>
+        <div class="col-2 footer_col">
+          <h3>Policies & Regulations</h3>
+          <ul class="mt-4">
+            <li><a href="#">Terms and condition</a></li>
+            <li><a href="#">Payment Terms</a></li>
+            <li><a href="#">Information privacy policy</a></li>
+            <li><a href="#">Operational Regulations</a></li>
+          </ul>
+        </div>
+        <div class="col-2 footer_col">
+          <h3 class="contact">Contact </h3>
+          <ul class="mt-4">
+            <li>
+              <a href="#"><i class="bi bi-geo-alt-fill"></i>02 Ngo Thi Nham Street, Lien Chieu District,Da Nang</a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-telephone-fill"></i> +84 906666789</a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-envelope-fill"></i> admin@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script>
+    // đoạn script để chọn ngày
+    flatpickr(".date-picker", {
+      // format ngayf theo định dạng day month year ưewsđsádadfxsa
+      dateFormat: "Y/m/d",
+    });
+
+    // đoạn script cho slider 
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 7,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    function selectFromFunc(e, targetInput) {
+      targetInput.value = e.target.innerText;
+      e.target.parentElement.classList.remove("show");
+    }
+
+  </script>
+</body>
+
+</html>

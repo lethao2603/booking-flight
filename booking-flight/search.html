@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+    <title>Trang chủ</title>
+  </head>
+</head>
+
+<body>
+  <header class="container-fluid">
+    <div class="header__container">
+      <div class="header__top row">
+        <div class="col-3">
+        </div>
+        <div class="col-9">
+        </div>
+      </div>
+      <div class="header__nav">
+        <nav>
+          <ul class="d-flex">
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Flight + Hotel</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Hot deals</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Purchase</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="search-container">
+
+    <div class="search-result">
+      <div class="container-lg">
+        <h3 id="total-search" class="mb-4">247 flights in Da Nang</h3>
+        <div class="row g-5">
+          <div class="col-3">
+            <div class="filter">
+              <div class="d-flex justify-content-between align-items-center filter_header">
+                <h4>Filter</h4>
+                <a href="#">Reset</a>
+              </div>
+
+              <div class="filter_option">
+                <p class="mb-3 mt-3">Price/passenger</p>
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="filter_price" id="lt_500k" value="lt_500k" />
+                  <label for="lt_500k">
+                    < 300.000đ</label>
+                </div>
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="filter_price" id="500k_1000k" value="500k_1000k" />
+                  <label for="500k_1000k">500.000đ - 1.000.000đ</label>
+                </div>
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="price" id="1000k_2000k" value="1000k_2000k" />
+                  <label for="1000k_2000k">1.000.000đ - 2.000.000đ</label>
+                </div>
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="price" id="gt_2000k" value="gt_2000k" />
+                  <label for="gt_2000k">> 2.000.000đ</label>
+                </div>
+              </div>
+
+              <div class="filter_option filter_rating">
+                <p class="mb-3 mt-3">Flight Rating</p>
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="filter_rating" id="five_star" value="five_star" />
+                  <label for="five_star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </label>
+                </div>
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="filter_rating" id="four_start" value="four_start" />
+                  <label for="four_start">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </label>
+                </div>
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="filter_rating" id="three_star" value="three_star" />
+                  <label for="three_star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </label>
+                </div>
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="filter_rating" id="two_star" value="two_star" />
+                  <label for="two_star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </label>
+                </div>
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="filter_rating" id="one_star" value="one_star" />
+                  <label for="one_star">
+                    <i class="bi bi-star-fill"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 search_list">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <h1>VietNam AirLines </h1>
+          <div class="mt-4">
+            <p>Inspiration for travels</p>
+            <p>Travel secrets, interesting stories are waiting for you</p>
+          </div>
+        </div>
+
+        <div class="col-2 footer_col">
+          <h3>Customer support</h3>
+          <ul class="mt-4">
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">How do I make a booking airline?</a></li>
+            <li><a href="#">Payment options</a></li>
+            <li><a href="#">Booking tips</a></li>
+          </ul>
+        </div>
+        <div class="col-2 footer_col">
+          <h3>Policies & Regulations</h3>
+          <ul class="mt-4">
+            <li><a href="#">Terms and condition</a></li>
+            <li><a href="#">Payment Terms</a></li>
+            <li><a href="#">Information privacy policy</a></li>
+            <li><a href="#">Operational Regulations</a></li>
+          </ul>
+        </div>
+        <div class="col-2 footer_col">
+          <h3 class="contact">Contact </h3>
+          <ul class="mt-4">
+            <li>
+              <a href="#"><i class="bi bi-geo-alt-fill"></i>02 Ngo Thi Nham Street, Lien Chieu District,Da Nang</a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-telephone-fill"></i> +84 906666789</a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-envelope-fill"></i> admin@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/search.js"></script>
+  <script>
+    flatpickr(".date-picker", {
+      // format ngayf theo định dạng day month year ưewsđsádadfxsa
+      dateFormat: "d-m-Y",
+      minDate: "today"
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 7,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>

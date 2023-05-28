@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flight Booking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+  <section class="contact" id="contact">
+    <h1 class="heading">
+      <span>t</span>
+      <span>r</span>
+      <span>a</span>
+      <span>v</span>
+      <span>e</span>
+      <span>l</span>
+      <span>e</span>
+      <span>r</span>
+      <span>d</span>
+      <span>e</span>
+      <span>t</span>
+      <span>a</span>
+      <span>i</span>
+      <span>l</span>
+      <span>s</span>
+    </h1>
+    <section class="traveler" id="traveler">
+      <div class="row details-container">
+        <!-- <div class="mt-4">
+          <h2>Traveler Details of Adult 1</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Họ và Tên</label>
+              <input required type="text" id="name" name="name" class="form-control" placeholder="Nhập họ và tên">
+            </div>
+
+            <div class="form-group">
+              <label for="name">Ngày sinh</label>
+              <i class="bi bi-calendar3"></i>
+              <input type="text" name="check-out" class="date-picker" placeholder="Depature Date" id="departure-time" />
+            </div>
+
+            <div class="form-group">
+              <label for="gmail">Email</label>
+              <input required type="text" id="gmail" name="gmail" class="form-control" placeholder="Nhập Email">
+            </div>
+
+            <div class="form-group">
+              <label for="Cmnd">Chứng minh thư:</label>
+              <input required type="text" id="Cmnd" name="Cmnd" class="form-control" placeholder="Nhập chứng minh thư">
+            </div>
+
+            <div class="form-group">
+              <label for="NC">Nơi cấp:</label>
+              <input required type="text" name="NC" list="NC-list" class="form-control" placeholder="Nơi cấp">
+              <datalist id="NC-list">
+                <option value="Đà Nẵng"></option>
+                <option value="Quảng Trị"></option>
+                <option value="Khánh Hòa"></option>
+                <option value="Đà Lạt"></option>
+                <option value="Hà Nội"></option>
+                <option value="Sài Gòn"></option>
+              </datalist>
+            </div>
+
+            <div class="form-group">
+              <label for="QT">Quốc tịch:</label>
+              <input required type="text" name="QT" list="QT-list" class="form-control" placeholder="Chọn quốc tịch">
+              <datalist id="QT-list">
+                <option value="Việt Nam"></option>
+                <option value="Hoa Kỳ"></option>
+                <option value="Thái Lan"></option>
+                <option value="Trung Quốc"></option>
+                <option value="Nhật Bản"></option>
+                <option value="Mexico"></option>
+              </datalist>
+            </div>
+
+            <div class="form-group">
+              <label for="NN">Ngoại ngữ</label>
+              <ul id="NN">
+                <li><input type="checkbox" id="NN" name="NN1">English</li>
+                <li><input type="checkbox" id="NN" name="NN2">Tiếng Việt</li>
+                <li><input type="checkbox" id="NN" name="NN3">Tiếng Trung</li>
+                <li><input type="checkbox" id="NN" name="NN3">Tiếng Thái</li>
+              </ul>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Continue</button>
+          </form>
+        </div> -->
+
+      </div>
+      <div style="width: 600px;" class="text-end m-auto mt-4">
+        <button class="btn btn-primary" id="send-details">Continue</button>
+      </div>
+    </section>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./js/details.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+
+<script>
+  flatpickr(".date-picker", {
+    dateFormat: "Y/m/d",
+  })
+
+</script>
+
+
+</html>
